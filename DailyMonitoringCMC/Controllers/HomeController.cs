@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using RDotNet;
+using System.IO;
 namespace DailyMonitoringCMC.Controllers
 {
     public class HomeController : Controller
@@ -25,6 +26,11 @@ namespace DailyMonitoringCMC.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public void Rexecution()
+        {
+           
         }
     }
 }
