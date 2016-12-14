@@ -17,6 +17,7 @@ namespace DailyMonitoringCMC.Models
         public int WindMillID { get; set; }
         public virtual WindMill WindMill { get; set; }
         //public List<WindMill> WindMills { get; set; }
-        //public List<WindPark> WindParks { get; set; }
+        ////public List<WindPark> WindParks { get; set; }
+
     }
 }
