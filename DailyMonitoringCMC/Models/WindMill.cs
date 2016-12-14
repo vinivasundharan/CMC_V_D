@@ -11,8 +11,11 @@ namespace DailyMonitoringCMC.Models
         [Display(Name = "Description/Message")]
         public string WindMillName { get; set; }
         public int WindParkID { get; set; }
-        public int ConnectionControlID { get; set; }
+        //public int ConnectionControlID { get; set; }
+        public int LocationID { get; set; }
         public virtual WindPark Windpark { get; set; }
-        public virtual ConnectionControl Connectioncontrol { get; set; }
+        public virtual Location Location { get; set; }
+        public virtual List<ConnectionControl> Connectioncontrols { get; set; }
+        public List<Node> Nodes { get; set; }
     }
 }
