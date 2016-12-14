@@ -18,6 +18,8 @@ namespace DailyMonitoringCMC.Models
         public string ModifiedBy { get; set; }
         [Display(Name = "Description/Message")]
         public string Message { get; set; }
+        public int? ConnectionControlID { get; set; }
         public virtual List<WindMill> WindMills { get; set; }
+        public virtual ConnectionControl Connectioncontrol { get; set; }
     }
 }
