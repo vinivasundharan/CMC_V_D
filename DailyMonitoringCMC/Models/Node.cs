@@ -32,7 +32,8 @@ namespace DailyMonitoringCMC.Models
         public NodeActive NodeActive { get; set; }
         public DateTime LastUpdated { get; set; }
         public DateTime StatusChanged { get; set; }
-        [ForeignKey("WindTurbine")]
-        
+        public int WindMillID { get; set; }
+        public virtual WindMill WindMill { get; set; }
+        public virtual List<Trend> Trends { get; set; }
     }
 }

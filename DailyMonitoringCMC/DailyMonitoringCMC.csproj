@@ -170,10 +170,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RScriptRunner.cs" />
+    <Compile Include="Controllers\WindParksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="DAL\DailyMonitoringCMCContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ConnectionControl.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Node.cs" />
@@ -195,6 +198,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="ClassDiagram2.cd" />
+    <Content Include="App_Data\testCSharp.R" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -221,10 +227,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\WindParks\Create.cshtml" />
+    <Content Include="Views\WindParks\Delete.cshtml" />
+    <Content Include="Views\WindParks\Details.cshtml" />
+    <Content Include="Views\WindParks\Edit.cshtml" />
+    <Content Include="Views\WindParks\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
