@@ -41,8 +41,17 @@ namespace DailyMonitoringCMC.Controllers
             REngine engine = REngine.GetInstance();
             //engine.Evaluate("require('ggplot2')");
             //engine.Evaluate("library('ggplot2')");
-            engine.Evaluate("print(plot.ts(c(1:100))");
-            //engine.Evaluate("source('D:\\Thesis R\\testCSharp.R')");
+            //engine.Evaluate("print(plot.ts(c(1:100))");
+            // engine.Evaluate("setwd('D:/Thesis R')");
+            //List<int> ans = new List<int>();
+            engine.Initialize();
+            NumericVector ans=engine.Evaluate("c(1:100)").AsNumeric();
+            //engine.Evaluate("png(filename='D:/Plots123/testRCSharp/plottest123.bmp')");
+            engine.Evaluate("plot(c(1:100));filename = paste('D:/VisualStudioCommunity/DailyMonitoringCMC/DailyMonitoringCMC/App_Data/plot12345.jpg',sep='');dev.copy(jpeg,filename=filename);");
+        //    engine.Evaluate("filename = paste('D:/Plots123/testRCSharp/plot12345.jpg',sep='')");
+        //    engine.Evaluate("dev.copy(jpeg,filename=filename)");
+           
+           // engine.Evaluate("source(('D:/Thesis R/testCSharp.r')");
 
             // .NET Framework array to R vector.
             //NumericVector group1 = engine.CreateNumericVector(new double[] { 30.02, 29.99, 30.11, 29.97, 30.01, 29.99 });
@@ -60,7 +69,7 @@ namespace DailyMonitoringCMC.Controllers
 
             // you should always dispose of the REngine properly.
             // After disposing of the engine, you cannot reinitialize nor reuse it
-            engine.Dispose();
+            //engine.Dispose();
         }
     }
 }
