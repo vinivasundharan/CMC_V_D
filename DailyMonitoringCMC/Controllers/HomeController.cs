@@ -46,12 +46,12 @@ namespace DailyMonitoringCMC.Controllers
             //List<int> ans = new List<int>();
             engine.Initialize();
             NumericVector ans=engine.Evaluate("c(1:100)").AsNumeric();
-           // engine.Evaluate("png(filename='D:/Plots123/testRCSharp/plottest123.bmp')");
-          //  engine.Evaluate("plot(c(1:100));filename = paste('D:/Plots123/testRCSharp/plot12345.jpg',sep='');dev.copy(jpeg,filename=filename);dev.off()");
-           // engine.Evaluate("plot(c(1:100))");
-           // engine.Evaluate("filename = paste('D:/Plots123/testRCSharp/plot12345.jpg',sep='')");
-           //engine.Evaluate("dev.copy(jpeg,filename=filename)");
-
+            // engine.Evaluate("png(filename='D:/Plots123/testRCSharp/plottest123.bmp')");
+            //  engine.Evaluate("plot(c(1:100));filename = paste('D:/Plots123/testRCSharp/plot12345.jpg',sep='');dev.copy(jpeg,filename=filename);dev.off()");
+            // engine.Evaluate("plot(c(1:100))");
+            // engine.Evaluate("filename = paste('D:/Plots123/testRCSharp/plot12345.jpg',sep='')");
+            //engine.Evaluate("dev.copy(jpeg,filename=filename)");
+          //  engine.Evaluate("library('stats')");
             engine.Evaluate("source('D:/Thesis R/testCSharp.r')");
 
             // .NET Framework array to R vector.
